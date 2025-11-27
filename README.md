@@ -1,6 +1,6 @@
 # creative-tech-lab
 Creative-tech experiments and internship project work exploring design + modern development.
-# 🌐 Creative-Tech Vertical  
+# 🌐 Creative-Tech-lab
 
 A curated space where creativity meets engineering thinking.  
 This repo hosts my internship project work, experiments, prototypes, and everything that blends design, tech, and innovation into one vertical stream.
@@ -13,9 +13,8 @@ Build digital experiences that look good, think smart, and scale like future tec
 ---
 
 ## 🛠️ Tech Stack  
-- HTML, CSS, JS  
-- Python (Data + Automation)  
-- Creative UI Experiments  
+- HTML, CSS, JS , react 
+- Python (Data + Automation)    
 - Responsive Design  
 - Modern Web Practices  
 
@@ -32,13 +31,12 @@ Build digital experiences that look good, think smart, and scale like future tec
 
 ## 🎨 Core Themes  
 - Simple  
-- Modern  
-- Human-centered  
+- Modern   
 - Aesthetic but practical  
 
 ---
 
-## 📌 Why “Creative-Tech Vertical”?  
+## 📌 Why “Creative-Tech-lab”?  
 Because this repo represents a focused vertical where:  
 - Creativity isn't decoration  
 - Tech isn't boring  
@@ -47,7 +45,7 @@ Because this repo represents a focused vertical where:
 ---
 
 ## 🧑‍💻 Author  
-**Misthi Roy**  
+**Durga Roy**  
 Tech + Creativity | Internship Projects 2025  
 
 ---
