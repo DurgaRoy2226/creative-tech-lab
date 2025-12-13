@@ -1,0 +1,130 @@
+/* MAIN THEMES -------------------------------*/
+body.light {
+    --bg: linear-gradient(135deg, #FAF7F3, #F0E4D3, #DCC5B2);
+    --card-bg: rgba(240, 228, 211, 0.60);
+    --text: #744F4A;
+    --border: #DCC5B2;
+    --focus: #D9A299;
+    --btn: #D9A299;
+    --btn-hover: #A57B74;
+}
+
+body.dark {
+    --bg: #2b2626;
+    --card-bg: #3b3434;
+    --text: #E8D6C1;
+    --border: #9a7f72;
+    --focus: #D9A299;
+    --btn: #A57B74;
+    --btn-hover: #885f58;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    background: var(--bg);
+    transition: 0.4s ease-in-out;
+    height: 100vh;
+}
+
+/* THEME BUTTONS ------------------------------*/
+.theme-buttons {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.tbtn {
+    padding: 8px 15px;
+    background: var(--btn);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.tbtn:hover {
+    background: var(--btn-hover);
+}
+
+/* FORM CARD ---------------------------------*/
+.wrapper {
+    width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background: var(--card-bg);
+    backdrop-filter: blur(7px);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(217, 162, 153, 0.3);
+    transition: 0.4s ease;
+}
+
+.heading {
+    text-align: center;
+    color: var(--focus);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* FORM ELEMENTS ----------------------------*/
+label {
+    font-weight: 600;
+    color: var(--text);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 2px solid var(--border);
+    background: #FAF7F3;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--focus);
+    box-shadow: 0 0 8px #D9A29988;
+}
+
+.msg {
+    font-size: 13px;
+    color: #B96F6F;
+    min-height: 15px;
+    margin-top: 5px;
+}
+
+/* ERROR ANIMATION ----------------------------*/
+.shake {
+    animation: shakeAnim 0.25s ease;
+}
+
+@keyframes shakeAnim {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}
+
+/* BUTTON -------------------------------------*/
+button {
+    padding: 12px;
+    border: none;
+    background: var(--btn);
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: var(--btn-hover);
+}

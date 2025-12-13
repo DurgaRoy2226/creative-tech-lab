@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative-Tech Vertical</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>Creative-Tech Vertical</header>
+
+    <!-- TOOLBAR -->
+    <div class="toolbar">
+        <strong>Color:</strong>
+        <button onclick="changeColor('red')">Red</button>
+        <button onclick="changeColor('green')">Green</button>
+        <button onclick="changeColor('blue')">Blue</button>
+
+        <strong>Font:</strong>
+        <select id="fontSelect" onchange="changeFont()">
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Courier New">Courier New</option>
+        </select>
+
+        <strong>Size:</strong>
+        <button onclick="changeSize(2)">A+</button>
+        <button onclick="changeSize(-2)">A-</button>
+
+        <strong>Style:</strong>
+        <button onmouseover="applyStyle('bold')" onmouseout="removeStyle('bold')">Bold</button>
+        <button onmouseover="applyStyle('italic')" onmouseout="removeStyle('italic')">Italic</button>
+        <button onmouseover="applyStyle('underline')" onmouseout="removeStyle('underline')">Underline</button>
+    </div>
+
+    <!-- PAGE AREA -->
+    <div class="page" id="page" contenteditable="true">
+        Start typing your creative-tech magic here...
+    </div>
+
+    <footer>© 2025 Misthi Roy | creative-tech-vertical</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

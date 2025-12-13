@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative-Tech Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+
+    <div class="theme-buttons">
+        <button onclick="setTheme('light')" class="tbtn">Light</button>
+        <button onclick="setTheme('dark')" class="tbtn">Dark</button>
+    </div>
+
+    <div class="wrapper">
+        <h1 class="heading">Creative-Tech Form</h1>
+
+        <form id="myForm" class="form-box">
+
+            <div class="field">
+                <label>Name</label>
+                <input type="text" id="name">
+                <p class="msg" id="nameMsg"></p>
+            </div>
+
+            <div class="field">
+                <label>Email</label>
+                <input type="email" id="email">
+                <p class="msg" id="emailMsg"></p>
+            </div>
+
+            <div class="field">
+                <label>Password</label>
+                <input type="password" id="password">
+                <p class="msg" id="passMsg"></p>
+            </div>
+
+            <button type="button" onclick="validateForm()">Submit</button>
+        </form>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

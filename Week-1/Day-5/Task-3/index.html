@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Creative-Tech Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Creative-Tech Calculator</h1>
+  </header>
+
+  <div class="container fade">
+
+    <div class="input-group">
+      <label>Enter Number 1</label>
+      <input type="text" id="num1">
+      <p class="error" id="err1"></p>
+    </div>
+
+    <div class="input-group">
+      <label>Enter Number 2</label>
+      <input type="text" id="num2">
+      <p class="error" id="err2"></p>
+    </div>
+
+    <div class="btn-row">
+      <button onclick="calculate('add')">Add</button>
+      <button onclick="calculate('sub')">Subtract</button>
+    </div>
+    <div class="btn-row">
+      <button onclick="calculate('mul')">Multiply</button>
+      <button onclick="calculate('div')">Divide</button>
+    </div>
+
+    <p class="result" id="result"></p>
+  </div>
+
+  <footer class="footer">
+    © 2025 Misthi Roy | Creative-Tech-vertical
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

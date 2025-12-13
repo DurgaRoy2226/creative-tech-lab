@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 class="title">JavaScript Function Practice</h1>
+
+        <!-- Rectangle Area -->
+        <div class="section">
+            <h2>Rectangle Area Calculator</h2>
+            <label>Enter Length</label>
+            <input type="number" id="len">
+
+            <label>Enter Width</label>
+            <input type="number" id="wid">
+
+            <button onclick="calcArea()">Find Area</button>
+            <p id="resArea" class="output"></p>
+        </div>
+
+        <!-- Vote Checker -->
+        <div class="section">
+            <h2>Vote Eligibility Checker</h2>
+            <label>Enter Age</label>
+            <input type="number" id="vAge">
+
+            <button onclick="checkVote()">Check</button>
+            <p id="resVote" class="output"></p>
+        </div>
+
+        <!-- Even/Odd Checker -->
+        <div class="section">
+            <h2>Even or Odd Checker</h2>
+            <label>Enter Number</label>
+            <input type="number" id="num">
+
+            <button onclick="checkNum()">Check</button>
+            <p id="resNum" class="output"></p>
+        </div>
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
