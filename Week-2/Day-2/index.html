@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Array Methods | Glass UI</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<main class="container">
+
+  <section class="glass hero">
+    <h1>JavaScript Array Methods Lab</h1>
+    <p>map(), filter(), reduce() — logic first, aesthetics included</p>
+  </section>
+
+  <!-- TASK 1 -->
+  <section class="glass card">
+    <h2>Task 1 – Data Transformation with map() and filter()</h2>
+    <p class="question">
+      <strong>Q1:</strong> Given <code>[120, 250, 300, 450, 600]</code><br>
+      • Filter prices greater than 250<br>
+      • Apply 10% discount using map()<br>
+      • Log both original and discounted arrays
+    </p>
+
+    <div class="actions">
+      <button onclick="runTask1()">Run</button>
+      <button class="ghost" onclick="clearOutput('out1')">Clear</button>
+    </div>
+
+    <pre id="out1"></pre>
+  </section>
+
+  <!-- TASK 2 -->
+  <section class="glass card">
+    <h2>Task 2 – Calculate Total Expense with reduce()</h2>
+    <p class="question">
+      <strong>Q2:</strong> Given expenses:<br>
+      { Food: 300 }, { Transport: 150 }, { Shopping: 400 }<br>
+      • Use reduce() to calculate total expense
+    </p>
+
+    <div class="actions">
+      <button onclick="runTask2()">Run</button>
+      <button class="ghost" onclick="clearOutput('out2')">Clear</button>
+    </div>
+
+    <pre id="out2"></pre>
+  </section>
+
+  <!-- TASK 3 -->
+  <section class="glass card">
+    <h2>Task 3 – Combine map(), filter(), reduce()</h2>
+    <p class="question">
+      <strong>Q3:</strong> Given scores <code>[45, 80, 90, 35, 60, 75]</code><br>
+      • Filter passing scores (≥ 50)<br>
+      • Add 10 bonus marks to each<br>
+      • Calculate total using reduce()
+    </p>
+
+    <div class="actions">
+      <button onclick="runTask3()">Run</button>
+      <button class="ghost" onclick="clearOutput('out3')">Clear</button>
+    </div>
+
+    <pre id="out3"></pre>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Practice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>ES6 Practice</h1>
+            <pre><code>// 1. const & let
+const APP_NAME = "ES6 Practice";
+const VERSION = 1;
+
+// 2. Template Literals
+const student = "Durga-Roy";
+const course = "Web Development";
+
+// 3. Object Destructuring
+const theme = { primary: "Black", secondary: "purple" };
+const { primary, secondary } = theme;
+
+// 4. Array Spread
+const fruits1 = ["kivi", "pomegranate"];
+const fruits2 = ["mango", "graps"];
+const allFruits = [...fruits1, ...fruits2];
+
+// 5. Rest Parameters
+const showHobbies = (...hobbies) => hobbies.join(", ");
+
+// 6. Arrow Function
+const area = (l, w) => l * w;
+
+// 7. Default Parameters
+const greet = (name = "Guest") => `Hello, ${name}!`;
+
+// 8. Object Destructuring with Defaults
+const car = { brand: "Tesla", model: "Model 3" };
+const { brand, model, range = "350km" } = car;
+
+// 9. Map with Arrow Function
+const upperFruits = allFruits.map(f => f.toUpperCase());</code></pre>
+            <div class="buttons">
+                <button id="run">Run Code</button>
+                <button id="clear" class="clear-btn">Clear</button>
+            </div>
+            <div class="output" id="output"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random User Card</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <main class="container">
+    <section class="glass card">
+      <h2>Random User Card</h2>
+
+      <div class="user-card">
+        <img id="avatar" src="" alt="User Avatar">
+        <p class="name" id="name">—</p>
+        <p class="email" id="email">—</p>
+      </div>
+
+      <div class="actions">
+        <button onclick="fetchUser()">Fetch New User</button>
+        <button class="secondary" onclick="clearCard()">Clear</button>
+      </div>
+
+      <pre id="status">Click “Fetch New User”</pre>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

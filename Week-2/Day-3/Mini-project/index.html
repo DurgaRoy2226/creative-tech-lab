@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title> Weather Fetcher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <div class="task-card">
+      <h2> Weather Fetcher 🌤️</h2>
+
+      <p class="question">
+        Enter a location to fetch current temperature and wind speed.
+      </p>
+
+      <input 
+        type="text" 
+        id="locationInput" 
+        placeholder="Enter city name (e.g. Khandwa , London)"
+      />
+
+      <div class="btn-group">
+        <button onclick="runWeather()">Check-Weather</button>
+        <button class="clear" onclick="clearWeather()">Clear</button>
+      </div>
+
+      <div class="output" id="weatherOutput">
+        Output will appear here...
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

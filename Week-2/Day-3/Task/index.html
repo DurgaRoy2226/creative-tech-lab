@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Async JavaScript Lab | Glass UI</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<main class="container">
+
+  <section class="glass hero">
+    <h1>Asynchronous JavaScript Lab</h1>
+    <p>Callbacks • Promises • Async/Await — time waits for no one</p>
+  </section>
+
+  <!-- TASK 1 -->
+  <section class="glass card">
+    <h2>Task 1 – Simulate API Call with setTimeout()</h2>
+    <p class="question">
+      <strong>Q1:</strong>  
+      • Log “Fetching user details...”  
+      • After 2 seconds, log “User data received”  
+      • Add another nested timeout for “Processing Data...”  
+      • Demonstrate asynchronous flow
+    </p>
+
+    <div class="actions">
+      <button onclick="runTask1()">Run</button>
+      <button class="ghost" onclick="clearOutput('out1')">Clear</button>
+    </div>
+
+    <pre id="out1"></pre>
+  </section>
+
+  <!-- TASK 2 -->
+  <section class="glass card">
+    <h2>Task 2 – Promise Example</h2>
+    <p class="question">
+      <strong>Q2:</strong>  
+      • Create a Promise that simulates data fetching  
+      • Resolve if online  
+      • Reject if offline  
+      • Handle using .then() and .catch()
+    </p>
+
+    <div class="actions">
+      <button onclick="runTask2()">Run</button>
+      <button class="ghost" onclick="clearOutput('out2')">Clear</button>
+    </div>
+
+    <pre id="out2"></pre>
+  </section>
+
+  <!-- TASK 3 -->
+  <section class="glass card">
+    <h2>Task 3 – Async/Await with Fetch</h2>
+    <p class="question">
+      <strong>Q3:</strong>  
+      • Fetch latest posts from an API  
+      • Use async/await  
+      • Handle errors using try/catch
+    </p>
+
+    <div class="actions">
+      <button onclick="runTask3()">Run</button>
+      <button class="ghost" onclick="clearOutput('out3')">Clear</button>
+    </div>
+
+    <pre id="out3"></pre>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
